@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Thinks : THis Is a New Kind of Slider</title>
+		<meta charset="utf-8">
+		<!--javascript-->
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="SyntaxHighlighter/scripts/shCore.js"></script>
+		<script type="text/javascript" src="SyntaxHighlighter/scripts/shBrushXml.js"></script>
+		<script type="text/javascript" src="SyntaxHighlighter/scripts/shBrushJScript.js"></script>
+		<script type="text/javascript" src="SyntaxHighlighter/scripts/shBrushCss.js"></script>
+		<script type="text/javascript" src="js/thinks.js"></script>
+		<!-- stylesheets -->
+		<link type="text/css" rel="stylesheet" href="css/reset.css"/>
+		<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Aldrich"/>
+		<link type="text/css" rel="stylesheet" href="css/thinks.css"/>
+		<link type="text/css" rel="stylesheet" href="SyntaxHighlighter/styles/shCoreRDark.css"/>
+		<link type="text/css" rel="stylesheet" href="css/style.css"/>
+	</head>
+	<body>
+		<div class="layout">
+			<div id="thinks" style="width:1000px; height : 300px">
+				<div class="no-script">
+					<noscript>
+						<!-- placeholder 1st image when javascript is off -->
+						<img src="img/demoiselle.jpg" alt="demoiselle"/>
+					</noscript>
+				</div>
+				<ul>
+					<li>
+					  	<img src="img/demoiselle.jpg" alt="demoiselle" data-autoscale="true" data-position="center"  />
+						<div class="layer" style="left: 110px; top:25px;" data-speed="1000" data-delay="200" data-anim-in="slidingTop" data-anim-out="slidingBot"><h1><span class="blue">[Thinks]</span></h1></div>
+						<div class="layer black" style="left: 142px; top:115px;" data-speed="1000" data-delay="400" data-anim-in="slidingLeft" data-anim-out="slidingRight"><h2><span class="blue">TH</span>inks</h2></div>
+						<div class="layer black" style="left: 281px; top:118px;" data-speed="1000" data-delay="600" data-anim-in="slidingBot" data-anim-out="slidingTop"><p><span class="blue">I</span>s</p></div>
+						<div class="layer black" style="left: 128px; top:169px;" data-speed="1000" data-delay="800" data-anim-in="slidingRight" data-anim-out="slidingLeft"><p>a</p></div>
+						<div class="layer black" style="left: 166px; top:166px;" data-speed="1000" data-delay="1000" data-anim-in="slidingTop" data-anim-out="slidingBot"><h3><span class="blue">N</span>ew</h3></div>
+						<div class="layer black" style="left: 260px; top:169px;" data-speed="1000" data-delay="1200" data-anim-in="slidingLeft" data-anim-out="slidingRight"><p><span class="blue">K</span>ind</p></div>
+						<div class="layer black" style="left: 145px; top:220px;" data-speed="1000" data-delay="1400" data-anim-in="slidingBot" data-anim-out="slidingTop"><p>of</p></div>
+						<div class="layer black" style="left: 193px; top:217px;" data-speed="1000" data-delay="1600" data-anim-in="slidingRight" data-anim-out="slidingLeft"><h2><span class="blue">S</span>lider</h2></div> 
+					</li>
+					<!-- peux contenir plusieurs scene (li) -->
+					<li>
+					  	<img src="img/construction.jpg" alt="alt" data-autoscale="false" data-autocenter="false"/>
+					  	<!-- peux contenir plusieurs calques slider -->
+						<div class="layer purple" style="left: 45px; top:15px;" >
+						   <h3>Réalisation</h3>
+						</div>
+						<div class="layer green" style="left: 180px; top:50px;" data-speed="500" data-delay="500" data-anim-in="fade" data-anim-out="fade">
+						   <h1>facile</h1>
+						</div>
+						<div class="layer blue" style="left: 480px; top:235px;" data-speed="500" data-delay="1000" data-anim-in="fade" data-anim-out="fade">
+						   <h2>d'animations</h2>
+						</div>
+						<div class="layer orange" style="left: 685px; top:150px;" data-speed="500" data-delay="500" data-anim-in="fade" data-anim-out="fade">
+						   <h1>originales</h1>
+						</div>
+					</li>
+					<li>
+					  	<img src="img/gradient.jpg" alt="alt" data-autoscale="false" data-autocenter="false"/>
+					</li>
+				</ul>
+				<div id="navbar">
+					<div id="navbarLeft"></div>
+					<div id="controls"></div>
+					<div id="navbarRight"></div>
+				</div>
+				<div id="prev">
+					<svg version="1.1" x="0px" y="0px" width="17px" height="25px">
+					<path class="st0" d="M0.514,13.589C0.173,13.274,0,12.906,0,12.485c0-0.425,0.173-0.793,0.514-1.108L12.35,0.471
+						C12.691,0.156,13.087,0,13.54,0c0.45,0,0.848,0.156,1.189,0.471l1.761,1.625C16.831,2.411,17,2.775,17,3.193
+						s-0.169,0.782-0.51,1.098l-8.951,8.257l8.951,8.161C16.831,21.024,17,21.386,17,21.79s-0.169,0.766-0.51,1.081l-1.761,1.658
+						c-0.341,0.315-0.74,0.471-1.2,0.471c-0.457,0-0.852-0.156-1.179-0.471L0.514,13.589L0.514,13.589z"/>
+					</svg>
+				</div>
+				<div id="next">
+					<svg version="1.1" x="0px" y="0px" width="17px" height="25px" >
+						<path class="st0" d="M16.486,11.411C16.827,11.726,17,12.094,17,12.515c0,0.425-0.173,0.793-0.514,1.108L4.65,24.529
+							C4.309,24.844,3.913,25,3.46,25c-0.45,0-0.848-0.156-1.189-0.471L0.51,22.904C0.169,22.589,0,22.225,0,21.807
+							s0.169-0.782,0.51-1.098l8.951-8.257L0.51,4.291C0.169,3.976,0,3.614,0,3.21s0.169-0.766,0.51-1.081l1.761-1.658
+							C2.612,0.156,3.011,0,3.471,0C3.928,0,4.323,0.156,4.65,0.471L16.486,11.411L16.486,11.411z"/>
+					</svg>
+				</div>
+			</div>
+			<h1>Slider :</h1>
+			<h2>Implementation : </h2>
+			<h3>HTML :</h3>
+			<pre class="brush: html">
+				&lt;head>
+					<!--appel de jquery et du script thinks  -->
+					&lt;script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js">&lt;/script>
+					&lt;script type="text/javascript" src="js/thinks.js">&lt;/script>
+					<!-- style du module thinks -->
+					&lt;link type="text/css" rel="stylesheet" href="css/thinks.css"/>
+				&lt;/head>
+			</pre>
+			<pre class="brush: html">
+				&lt;div id="thinks" style="width:...px; height : ...px">
+					&lt;div class="no-script">
+						&lt;noscript>
+							&lt;!--Première image lorsque le javascript est désactivé -->
+							&lt;img src="img/first.jpg" alt="first"/>
+						&lt;/noscript>
+					&lt;/div>
+					&lt;ul>
+						&lt;!-- déclaration des slides -->
+						&lt;li>
+							&lt;img src="img/first.jpg"  alt="first"  />&lt;/li>
+							&lt;div class="layer" style="top : ..px; left : ..px">
+								&lt;p>Hey ! I'm a layer !&lt;/p>
+							&lt;
+							&lt;div class="layer">
+								&lt;p>And I'm another one !&lt;/p>
+							&lt;
+						&lt;li>&lt;img src="img/second.jpg" alt="second" />&lt;/li>
+						&lt;li>&lt;img src="img/third.jpg"  alt="third"  />&lt;/li>
+					&lt;/ul>
+					&lt;!-- conteneur de la liste de navigation -->
+					&lt;div id="controls">&lt;/div>
+					&lt;!-- Bouton précédents et suivant -->
+					&lt;div id="prev">&lt;/div>
+					&lt;div id="next">&lt;/div>
+				&lt;/div></pre>
+			<h3>JavaScript : </h3>
+			<pre class="brush: js">
+				$('#thinks').thinks({
+						layerSelector		: ".layer", //default ".layer"
+						pervSelector		: "#prev", //default "#prev"
+						nextSelector		: "#next", //default "#next"
+						navSelector			: "#controls", //default "#controls"
+						speed				: 500, // 
+						delay				: 5000,
+						effect 				: "random",
+						numberNav			: false,
+						pauseHover			: true,
+				});</pre>
+			<h4>Options :</h4>
+			<ul>
+				<li>
+					<b>layerSelector</b> : <i>( selector )</i><br/>
+					<p>Class des calques</p>
+				</li>
+				<li>
+					<b>pervSelector</b> : <i>( selector )</i><br/>
+				</li>
+				<li>
+					<b>nextSelector</b> : <i>( selector )</i><br/>
+				</li>
+				<li>
+					<b>navSelector</b> : <i>( selector )</i><br/>
+				</li>
+				<li>
+					<b>speed</b> : <i>( ms )</i><br/>
+				</li>
+				<li>
+					<b>delay</b> : <i>( ms or false )</i><br/>
+				</li>
+				<li>
+					<b>effect</b> : <i>( fade | slidingBot | slindingLeft | slidingTop | slidingRight | random )</i><br/>
+				</li>
+				<li>
+					<b>numberNav</b> : <i>( true or false )</i><br/>
+				</li>
+				<li>
+					<b>pauseHover</b> : <i>( true or false )</i><br/>
+
+				</li>
+			</ul>
+			<h3>CSS : </h3>
+			<h1>Slider :</h1>
+			<h2>Implementation : </h2>
+		</div>
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
+</html>
+
