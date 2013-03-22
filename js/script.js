@@ -4,11 +4,11 @@ $(document).ready( function () {
 			pervSelector		: "#prev",
 			nextSelector		: "#next",
 			navSelector			: "#controls",
-			speed				: 500,
-			delay				: 5000,
+			speed				: 0,
+			delay				: 0,
 			effect 				: "random",
 			numberNav			: false,
-			pauseHover			: true,
+			pauseHover			: false,
 	});
 
 	SyntaxHighlighter.all();
